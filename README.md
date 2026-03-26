@@ -61,7 +61,7 @@ WEB_ATTAK: ... SRC=127.0.0.1 ... DPT=8080 ...
 
 | Успешный доступ | Логирование атаки | Правила iptables |
 |-----------------|-------------------|------------------|
-| ![Скриншот 1](screenshots/access-allowed.png) | ![Скриншот 2](screenshots/log-attack.png) | ![Скриншот 3](screenshots/iptables-rules.png) |
+| ![Скриншот 1](screenshots/access-allowed.PNG) | ![Скриншот 2](screenshots/log-attack.PNG) | ![Скриншот 3](screenshots/iptables-rules.PNG) |
 
 
 
