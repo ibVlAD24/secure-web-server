@@ -63,7 +63,7 @@ WEB_ATTAK: ... SRC=127.0.0.1 ... DPT=8080 ...
 |-----------------|-------------------|------------------|
 | ![Скриншот 1](screenshots/access-allowed.png) | ![Скриншот 2](screenshots/log-attack.png) | ![Скриншот 3](screenshots/iptables-rules.png) |
 
-*(Скриншоты будут добавлены позже)*
+
 
 ---
 
