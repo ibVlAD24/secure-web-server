@@ -12,7 +12,7 @@ iptables -P FORWARD DROP
 iptables -A INPUT -i lo -j ACCEPT
 
 # Разрешаем уже установленные соединения (чтобы ответы на наши запросы проходили)
-iptables -A INPUT -m state --state ESTABLISHED, RELATED -j ACCEPT
+iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 
 # Разрешаем доступ к веб-серверу ТОЛЬКО с твоего IP
 iptables -A INPUT -p tcp --dport 8080 -s 10.0.2.15 -j ACCEPT
