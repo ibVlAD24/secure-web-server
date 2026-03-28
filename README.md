@@ -1,3 +1,4 @@
+```markdown
 # 🔒 Защищённый веб-сервер
 
 [![GitHub stars](https://img.shields.io/github/stars/ibVLAD24/secure-web-server?style=for-the-badge)](https://github.com/ibVLAD24/secure-web-server/stargazers)
@@ -63,8 +64,6 @@ WEB_ATTAK: ... SRC=127.0.0.1 ... DPT=8080 ...
 |-----------------|-------------------|------------------|
 | ![Скриншот 1](screenshots/access-allowed.PNG) | ![Скриншот 2](screenshots/log-attack.PNG) | ![Скриншот 3](screenshots/iptables-rules.PNG) |
 
-
-
 ---
 
 ## 📂 Структура проекта
@@ -115,6 +114,9 @@ secure-web-server/
 ```
 WEB_ATTAK: IN=lo OUT= ... SRC=1.2.3.4 DST=127.0.0.1 ... DPT=8080 ...
 ```
+
+---
+
 ## 📡 Анализ трафика (Wireshark)
 
 В папке `pcaps/` находятся дампы трафика.  
@@ -128,14 +130,18 @@ WEB_ATTAK: IN=lo OUT= ... SRC=1.2.3.4 DST=127.0.0.1 ... DPT=8080 ...
 | `success.pcap` | Успешное подключение `curl`: TCP-рукопожатие (SYN, SYN-ACK, ACK), HTTP GET, HTTP 200 |
 | `blocked.pcap` | Заблокированная попытка `telnet`: только SYN (дальше iptables отбросил) |
 
-**Фильтр в Wireshark для просмотра только HTTP:** 
+**Фильтр в Wireshark для просмотра только HTTP:**  
 
+```
+http
+```
 
-### Скриншоты
+### 📸 Скриншоты
 
 | Успешный трафик | Заблокированный трафик |
 |-----------------|------------------------|
 | ![Успешный трафик](screenshots/wireshark-success.PNG) | ![Заблокированный трафик](screenshots/wireshark-blocked.PNG) |
+
 ---
 
 ## 📎 Полезные ссылки
@@ -156,6 +162,4 @@ WEB_ATTAK: IN=lo OUT= ... SRC=1.2.3.4 DST=127.0.0.1 ... DPT=8080 ...
 ## 📄 Лицензия
 
 Этот проект распространяется под лицензией MIT.
-
-
-
+```
