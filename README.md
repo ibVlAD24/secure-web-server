@@ -115,7 +115,20 @@ secure-web-server/
 ```
 WEB_ATTAK: IN=lo OUT= ... SRC=1.2.3.4 DST=127.0.0.1 ... DPT=8080 ...
 ```
+## 📡 Анализ трафика (Wireshark)
 
+В папке `pcaps/` находятся дампы трафика.  
+Их нужно **скачать** и открыть в Wireshark:
+
+1. Нажми на файл → **Download**
+2. Открой в Wireshark: `wireshark success.pcap`
+
+| Файл | Что показывает |
+|------|----------------|
+| `success.pcap` | Успешное подключение `curl`: TCP-рукопожатие (SYN, SYN-ACK, ACK), HTTP GET, HTTP 200 |
+| `blocked.pcap` | Заблокированная попытка `telnet`: только SYN (дальше iptables отбросил) |
+
+**Фильтр в Wireshark для просмотра только HTTP:**  
 ---
 
 ## 📎 Полезные ссылки
