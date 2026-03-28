@@ -128,7 +128,14 @@ WEB_ATTAK: IN=lo OUT= ... SRC=1.2.3.4 DST=127.0.0.1 ... DPT=8080 ...
 | `success.pcap` | Успешное подключение `curl`: TCP-рукопожатие (SYN, SYN-ACK, ACK), HTTP GET, HTTP 200 |
 | `blocked.pcap` | Заблокированная попытка `telnet`: только SYN (дальше iptables отбросил) |
 
-**Фильтр в Wireshark для просмотра только HTTP:**  
+**Фильтр в Wireshark для просмотра только HTTP:** 
+
+
+### Скриншоты
+
+| Успешный трафик | Заблокированный трафик |
+|-----------------|------------------------|
+| ![Успешный трафик](screenshots/wireshark-success.PNG) | ![Заблокированный трафик](screenshots/wireshark-blocked.PNG) |
 ---
 
 ## 📎 Полезные ссылки
