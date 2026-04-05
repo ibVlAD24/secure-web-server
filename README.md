@@ -138,6 +138,16 @@ WEB_ATTAK: IN=lo OUT= ... SRC=1.2.3.4 DST=127.0.0.1 ... DPT=8080 ...
 | ![Успешный трафик](screenshots/wireshark-success.PNG) | ![Заблокированный трафик](screenshots/wireshark-blocked.PNG) |
 ---
 
+## 🔒 HTTPS-версия
+
+| HTTPS сервер | Wireshark (TLS) |
+|--------------|-----------------|
+| ![HTTPS](screenshots/https-server.PNG) | ![TLS](screenshots/https-wireshark.PNG) |
+
+### Вывод
+- В Wireshark видны только TLS-пакеты (шифрование)
+- Данные (GET, POST, HTML) не читаются
+
 ## 📎 Полезные ссылки
 
 - [Документация iptables](https://netfilter.org/documentation/)
