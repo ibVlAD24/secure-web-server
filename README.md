@@ -148,6 +148,23 @@ WEB_ATTAK: IN=lo OUT= ... SRC=1.2.3.4 DST=127.0.0.1 ... DPT=8080 ...
 - В Wireshark видны только TLS-пакеты (шифрование)
 - Данные (GET, POST, HTML) не читаются
 
+- ## 🐳 Запуск в Docker
+
+### Сборка образа
+```bash
+docker build -t my-https-server .
+
+Запуск контейнера
+bash
+docker run -d -p 8443:8443 --name my-server my-https-server
+Проверка
+Открой браузер: https://localhost:8443
+
+Остановка и удаление
+bash
+docker stop my-server
+docker rm my-server
+
 ## 📎 Полезные ссылки
 
 - [Документация iptables](https://netfilter.org/documentation/)
