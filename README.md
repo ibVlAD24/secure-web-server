@@ -25,6 +25,7 @@
 | **Python 3** | Встроенный HTTP-сервер |
 | **iptables** | Файервол, фильтрация трафика |
 | **Git** | Контроль версий |
+| **Docker** | Контейнеризация приложения |
 
 ---
 
@@ -71,11 +72,13 @@ WEB_ATTAK: ... SRC=127.0.0.1 ... DPT=8080 ...
 
 ```
 secure-web-server/
-├── config/
-│   ├── iptables-rules.sh      # Скрипт настройки защиты
-│   └── iptables-rules.backup  # Бекап правил (опционально)
-├── screenshots/               # Скриншоты работы
-└── README.md                  # Документация
+├── Dockerfile                  # Инструкция для сборки контейнера
+├── https-server.py             # HTTPS-сервер на Python
+├── certs/
+│   ├── server.crt              # Самоподписанный сертификат
+│   └── server.key              # Приватный ключ
+├── screenshots/                # Скриншоты работы
+└── README.md                   # Документация
 ```
 
 ---
