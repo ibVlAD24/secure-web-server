@@ -150,29 +150,41 @@ WEB_ATTAK: IN=lo OUT= ... SRC=1.2.3.4 DST=127.0.0.1 ... DPT=8080 ...
 
 - ## 🐳 Запуск в Docker
 
+Ты прав, разметка съехала. Давай поправим.
+
+---
+
+
+## 🐳 Запуск в Docker
+
 ### Сборка образа
 ```bash
 docker build -t my-https-server .
+```
 
-Запуск контейнера
-bash
+### Запуск контейнера
+```bash
 docker run -d -p 8443:8443 --name my-server my-https-server
-Проверка
-Открой браузер: https://localhost:8443
+```
 
-Остановка и удаление
-bash
+### Проверка
+Открой браузер: `https://localhost:8443`
+
+### Остановка и удаление
+```bash
 docker stop my-server
 docker rm my-server
+```
 
-## 📎 Полезные ссылки
+---
 
+### Полезные ссылки
 - [Документация iptables](https://netfilter.org/documentation/)
 - [GitHub проекта](https://github.com/ibVLAD24/secure-web-server)
 
 ---
 
-## 🧑‍💻 Автор
+## 👨‍💻 Автор
 
 **ibVLAD24** — студент направления 10.05.03 "Информационная безопасность"
 
@@ -183,3 +195,4 @@ docker rm my-server
 ## 📄 Лицензия
 
 Этот проект распространяется под лицензией MIT.
+```
